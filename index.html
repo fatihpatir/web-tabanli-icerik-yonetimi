@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tabanlı İçerik Yönetimi PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#8b5cf6">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="confetti-canvas"></canvas>
+
+    <div class="container">
+        <!-- Top Bar for Install & Info -->
+        <div class="top-bar">
+            <button class="icon-btn" onclick="app.showModal('modal-info')" title="Bilgi">i</button>
+            <button class="icon-btn" id="btn-theme" onclick="app.toggleTheme()" title="Tema Değiştir" style="margin-left: 0.5rem;">📐</button>
+            <button class="icon-btn" id="btn-sound" onclick="app.toggleSound()" title="Sesi Aç/Kapat" style="margin-left: 0.5rem;">🔊</button>
+            <div class="search-bar">
+                <input type="text" id="search-input" class="search-input" placeholder="İçerik/Terim ara..." oninput="app.handleSearch(this.value)">
+            </div>
+            <button class="icon-btn" id="btn-install" style="display: none;" onclick="app.installApp()" title="Uygulamayı Yükle">📥</button>
+        </div>
+
+        <!-- Home View -->
+        <div id="view-home" class="view active">
+            <header>
+                <h1>İçerik Yönetimi Portalı</h1>
+                <p>Web Tabanlı İçerik Yönetimi Dersi Eğitim Platformu</p>
+            </header>
+            
+            <div id="search-results" style="display: none; margin-bottom: 2rem;">
+                <h3 style="margin-bottom: 1rem;">Arama Sonuçları</h3>
+                <div class="grid" id="search-grid"></div>
+                <hr style="margin-top: 2rem; border-color: var(--glass-border);">
+            </div>
+
+            <div class="grid" id="exam-grid">
+                <!-- Cards will be injected here -->
+            </div>
+        </div>
+
+        <!-- Selection View -->
+        <div id="view-selection" class="view">
+            <div class="nav-header">
+                <button class="btn btn-secondary" onclick="app.showHome()">← Geri Dön</button>
+                <button class="btn btn-secondary" onclick="app.printNotes()">📄 Ders Notu Yazdır</button>
+            </div>
+            <header>
+                <h2 id="selection-title">Konu Başlığı</h2>
+                <p>Çalışma ve Oyun Modları</p>
+            </header>
+            
+            <div class="grid">
+                <div class="card glow-card" onclick="app.startSummary()" style="grid-column: 1 / -1; border-color: var(--accent);">
+                    <span class="card-icon">📖</span>
+                    <h3 class="card-title">Hızlı Konu Özeti</h3>
+                    <p class="card-desc">Sınav öncesi bilmen gereken kritik noktalar.</p>
+                </div>
+                <div class="card glow-card" onclick="app.startStudy()">
+                    <span class="card-icon">📚</span>
+                    <h3 class="card-title">Çalışma</h3>
+                    <p class="card-desc">Soru-Cevap kartlarını incele.</p>
+                </div>
+                <div class="card glow-card" onclick="app.startFlashcards()">
+                    <span class="card-icon">🎴</span>
+                    <h3 class="card-title">Bilgi Kartları</h3>
+                    <p class="card-desc">Kategori bazlı terim kartları.</p>
+                </div>
+                <div class="card glow-card" onclick="app.startTFGame()">
+                    <span class="card-icon">⚡</span>
+                    <h3 class="card-title">Doğru/Yanlış</h3>
+                    <p class="card-desc">Hızlı karar ver, puanları topla!</p>
+                </div>
+                <div class="card glow-card" onclick="app.startWordGame()">
+                    <span class="card-icon">🧩</span>
+                    <h3 class="card-title">Kelime Tahmin</h3>
+                    <p class="card-desc">Web terimlerini tahmin et.</p>
+                </div>
+                <div class="card glow-card" onclick="app.startTestMode()">
+                    <span class="card-icon">📝</span>
+                    <h3 class="card-title">Klasik Test</h3>
+                    <p class="card-desc">4 şıklı uygulama sınavı.</p>
+                </div>
+                <div class="card glow-card" onclick="app.startTimeAttack()">
+                    <span class="card-icon">⏱️</span>
+                    <h3 class="card-title">Zamanla Yarış</h3>
+                    <p class="card-desc">60 saniyede en yüksek skor!</p>
+                </div>
+            </div>
+            
+            <div id="leaderboard-area" style="margin-top: 3rem; background: var(--bg-card); padding: 2rem; border-radius: 1.5rem;">
+                <h3 style="font-family: 'Orbitron'; margin-bottom: 1rem;">🏆 BAŞARI TABLOSU</h3>
+                <div id="leaderboard-content"></div>
+            </div>
+        </div>
+
+        <!-- Content Views -->
+        <div id="view-content" class="view">
+            <div class="nav-header">
+                <button class="btn btn-secondary" onclick="app.showSelection()">← Menüye Dön</button>
+                <button class="btn btn-secondary btn-print-mini" onclick="app.printNotes()">📄 Yazdır</button>
+                <div id="game-stats" style="font-family: 'Orbitron'; color: var(--neon-blue); display: flex; gap: 1rem; align-items: center; margin-left: auto;">
+                    <span id="stat-score"></span>
+                    <span id="stat-timer" style="color: #ef4444; font-weight: 700;"></span>
+                </div>
+            </div>
+            <div id="content-container">
+                <!-- Data will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal-info" class="modal" onclick="if(event.target === this) app.closeModals()">
+        <div class="modal-content">
+            <span class="modal-close" onclick="app.closeModals()">&times;</span>
+            <h2 style="font-family: 'Orbitron'; margin-bottom: 1.5rem; color: var(--neon-blue);">Uygulama Bilgisi</h2>
+            <p style="margin-bottom: 1rem; line-height: 1.6;">Bu uygulama, <b>Web Tabanlı İçerik Yönetimi</b> dersi konularını interaktif bir şekilde öğrenmek için geliştirilmiştir.</p>
+            <p style="margin-bottom: 1rem;">Geliştirici:<br><b>Fatih PATIR</b><br>Bilişim Teknolojileri Öğretmeni</p>
+            <div id="user-achievements" style="margin-top: 2rem; border-top: 1px solid var(--glass-border); padding-top: 1rem;">
+                <h4 style="font-family: 'Orbitron'; font-size: 0.8rem; color: var(--text-dim); margin-bottom: 1rem;">KAZANILAN ROZETLER</h4>
+                <div id="badge-container" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Print Area -->
+    <div id="print-area" class="print-only"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="https://fatihpatir.github.io/web" target="_blank" class="footer-name">Fatih PATIR</a>
+            <p class="footer-location">Korkuteli / Antalya</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>

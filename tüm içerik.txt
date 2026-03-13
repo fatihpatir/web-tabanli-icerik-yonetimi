@@ -1,0 +1,162 @@
+Harika bir fikir kral! Yıllık planı ve ders kitabını temel alarak, her sınav dönemi için odaklanman gereken konuları, flash kartları ve çalışma sorularını aşağıda senin için hazırladım.
+1. Dönem 1. Sınav Hazırlık (Eylül - Ekim)
+Konu Özeti: Bu dönemde odak noktan sitenin temelleridir. Domain (alan adı) sitenin adresi, hosting ise dosyaların saklandığı alandır. WordPress kurulumu için bir veri tabanı (MySQL) ve PHP desteği gerekir. Yönetim Paneli (wp-admin) üzerinden siteyi yönetirsin. Kullanıcı rolleri (Yönetici, Editör, Yazar, İçerik Sağlayıcı, Abone) yetki sınırlarını belirler.
+Flash Kartlar (20 Adet):
+1.	Domain: Web sitesinin internetteki adı.
+2.	Hosting: Web sitesi dosyalarının saklandığı sunucu alanı.
+3.	IP Adresi: İnternet sitelerinin rakamlardan oluşan benzersiz adresi.
+4.	DNS: IP adreslerini alan adlarına çeviren sistem.
+5.	XAMPP: Yerel bilgisayarda sunucu ortamı kuran program.
+6.	wp-admin: WordPress yönetim paneli giriş adresi.
+7.	Veri Tabanı: Sitedeki yazı ve ayarların saklandığı yer.
+8.	PHP: WordPress'in yazıldığı programlama dili.
+9.	Yönetici: Sitedeki her türlü işlemi yapabilen en yetkili rol.
+10.	Editör: Başkalarının yazılarını düzenleyip yayınlayabilen rol.
+11.	Yazar: Sadece kendi yazılarını yazıp yayınlayabilen rol.
+12.	İçerik Sağlayıcı: Kendi yazısını yazar ama yayınlayamaz.
+13.	Abone: Sadece kendi profilini güncelleyebilen en düşük yetkili rol.
+14.	Gutenberg: WordPress'in blok tabanlı yeni içerik editörü.
+15.	Blok Yerleştirici (+): Yazıya yeni bloklar eklemeyi sağlar.
+16.	Taslağı Kaydet: Yazıyı yayınlamadan kaydetme işlemi.
+17.	Önizleme: Yazının yayınlanmadan önceki son halini görme.
+18.	Site Başlığı: Tarayıcı çubuğunda görünen sitenin adı.
+19.	Slogan: Sitenin ne hakkında olduğunu açıklayan kısa ifade.
+20.	localhost: Yerel bilgisayardaki sunucu adresi.
+Çalışma Soruları (10 Soru):
+1.	Soru: Domain ve hosting olmadan bir web sitesi yayınlanabilir mi? Cevap: Hayır.
+2.	Soru: .edu uzantısı neyi temsil eder? Cevap: Eğitim kurumlarını.
+3.	Soru: WordPress kurulumunda wp-config.php ne işe yarar? Cevap: Veri tabanı bağlantı ayarlarını tutar.
+4.	Soru: Kullanıcı rolleri içinde en geniş yetkiye sahip olan hangisidir? Cevap: Yönetici.
+5.	Soru: "İçerik Sağlayıcı" rolü görsel yükleyebilir mi? Cevap: Hayır.
+6.	Soru: Bir yazıyı yayınlamadan sadece belirli kişilere şifreyle göstermek için hangi ayar kullanılır? Cevap: Parola Korumalı.
+7.	Soru: WordPress'in varsayılan içerik editörü nedir? Cevap: Gutenberg.
+8.	Soru: Bir blogun en üstüne bir yazıyı sabitlemek için ne yapılır? Cevap: "Blogun en üstüne sabitle" seçeneği işaretlenir.
+9.	Soru: IP adresini domain adresine çeviren teknoloji nedir? Cevap: DNS.
+10.	Soru: Bir kullanıcı oluşturulurken hangi alanın girilmesi zorunludur? Cevap: Kullanıcı adı ve e-posta.
+________________________________________
+1. Dönem 2. Sınav Hazırlık (Kasım - Ocak)
+Konu Özeti: Bu dönemde içerik organizasyonu ön plandadır. Yazılar dinamik güncellemeler içindir, Sayfalar ise hakkımızda veya iletişim gibi sabit içerikler içindir. Kategoriler hiyerarşik (ana ve alt kategori) olabilir. Menüler, kullanıcıların site içinde gezinmesini sağlar.
+Flash Kartlar (20 Adet):
+1.	Yazı: Haber, blog veya makale gibi dinamik içerikler.
+2.	Sayfa: Hakkımızda, iletişim gibi statik (sabit) içerikler.
+3.	Kategori: Yazıları konularına göre gruplandırma aracı.
+4.	Etiket: Yazı içeriğini tanımlayan anahtar kelimeler.
+5.	Öne Çıkan Görsel: Yazı listelerinde başlığın yanında çıkan resim.
+6.	Kalıcı Bağlantı: Yazının internetteki sabit linki (URL).
+7.	Özet: Yazının baş kısmında veya RSS servislerinde görünen kısa metin.
+8.	Tartışma: Yazıya yorum yapılıp yapılamayacağını belirleyen bölüm.
+9.	Alt Kategori: Bir ana kategoriye bağlı olan kategori.
+10.	Varsayılan Kategori: Kategori seçilmediğinde sistemin otomatik atadığı kategori.
+11.	Menü: Sitedeki bağlantıların listelendiği navigasyon alanı.
+12.	Menü Konumu: Menünün sitenin neresinde (üst, alt, yan) görüneceği.
+13.	Özel Bağlantılar: Menüye dış bir link (URL) ekleme özelliği.
+14.	Dolaşım Etiketi: Menüde görünen başlığın adı.
+15.	Hızlı Düzenle: Yazıyı açmadan başlık ve kategori değişikliği yapma.
+16.	Çöp Kutusu: Silinen içeriklerin 30 gün beklediği yer.
+17.	Hiyerarşi: Kategorilerin ana-alt ilişkisi kurması.
+18.	Statik İçerik: Zamanla değişmeyen, sayfa yapısındaki içerik.
+19.	Dinamik İçerik: Sürekli güncellenen blog gönderileri.
+20.	Galeri Bloku: Birden fazla görseli düzenli gösterme bloku.
+Çalışma Soruları (10 Soru):
+1.	Soru: Sayfalar kategorilere bağlanabilir mi? Cevap: Hayır.
+2.	Soru: Bir kategoriyi silince içindeki yazılar da silinir mi? Cevap: Hayır, varsayılan kategoriye atanır.
+3.	Soru: WordPress'te varsayılan kategori silinebilir mi? Cevap: Hayır.
+4.	Soru: Menüden bir sayfa silindiğinde o sayfa siteden de silinir mi? Cevap: Hayır, sadece bağlantısı kalkar.
+5.	Soru: Bir yazı birden fazla kategoriye atanabilir mi? Cevap: Evet.
+6.	Soru: Çöp kutusuna atılan bir yazı kaç gün sonra kalıcı olarak silinir? Cevap: 30 gün.
+7.	Soru: Yazı Kısa İsmi (Slug) belirlenirken neye dikkat edilmelidir? Cevap: Türkçe karakter kullanılmamalı ve kelimeler arası tire konmalıdır.
+8.	Soru: Menü isimleri nereden değiştirilir? Cevap: Görünüm > Menüler > Dolaşım Etiketi.
+9.	Soru: Yazı istatistiklerini (karakter, kelime sayısı) hangi simge gösterir? Cevap: Info (i) simgesi.
+10.	Soru: "Özel" görünürlük seçeneği neyi sağlar? Cevap: Sadece editör ve yazarların yazıyı görmesini sağlar.
+________________________________________
+2. Dönem 1. Sınav Hazırlık (Şubat - Mart)
+Konu Özeti: Sitenin tasarımı ve fonksiyonelliği bu dönemin konusudur. Temalar görsel yapıyı sağlar. style.css görselliği, functions.php ise özellikleri yönetir. Eklentiler (Plugins) siteye SEO, güvenlik veya hız gibi ek özellikler katar. Yorum Ayarları ile spamlar engellenir.
+Flash Kartlar (20 Adet):
+1.	Tema: Web sitesinin dış görünümünü belirleyen tasarım paketi.
+2.	style.css: Temanın stil (renk, yazı tipi) dosyası.
+3.	functions.php: Temaya yeni özellikler ekleyen dosya.
+4.	header.php: Sitenin üst bölümünü (logo, menü) yöneten dosya.
+5.	footer.php: Sitenin en alt (telif hakkı) bölümünü yöneten dosya.
+6.	Eklenti (Plugin): WordPress'e yeni işlevler katan kod paketleri.
+7.	Akismet: İstenmeyen (spam) yorumları engelleyen eklenti.
+8.	SEO Eklentisi: Sitenin arama motorlarında üst sıraya çıkmasını sağlar.
+9.	Caching (Önbellek): Sitenin daha hızlı açılmasını sağlayan yöntem.
+10.	API Anahtarı: Akismet gibi servisleri aktifleştiren özel kod.
+11.	Tartışma Ayarları: Yorum kurallarının belirlendiği menü.
+12.	Spam Yorum: Arama motoru kandırmak için atılan sahte yorumlar.
+13.	Onaylı Yorum: Yönetici tarafından kabul edilen ve yayınlanan yorum.
+14.	Ortam Kütüphanesi: Siteye yüklenen tüm resim ve videoların listesi.
+15.	Küçük Resim: Görsellerin 150x150 boyutundaki hali.
+16.	Dışa Aktar: Site içeriğini XML dosyası olarak indirme.
+17.	Hello Dolly: WordPress ile gelen rastgele sözler gösteren eklenti.
+18.	Klasik Düzenleyici: Gutenberg öncesi eski yazı editörü eklentisi.
+19.	Kademeli Yorumlar: Yoruma yapılan yanıtların seviye sınırı.
+20.	Otomatik Güncelleme: Eklentilerin yeni sürümlerinin sistemce yüklenmesi.
+Çalışma Soruları (10 Soru):
+1.	Soru: Tema değiştirirken ilk yapılması gereken nedir? Cevap: Sitenin yedeğini almak.
+2.	Soru: Sitenin renk ayarlarını değiştirmek için hangi dosya düzenlenir? Cevap: style.css.
+3.	Soru: Bir eklentiyi silmek için önce ne yapılmalıdır? Cevap: Etkisizleştirilmelidir.
+4.	Soru: İstenmeyen yorumları otomatik filtreleyen varsayılan eklenti hangisidir? Cevap: Akismet Anti-Spam.
+5.	Soru: "Yorum el ile onaylanmalı" ayarı neyi sağlar? Cevap: Tüm yorumların yönetici onayından geçmesini zorunlu kılar.
+6.	Soru: Ortam kütüphanesindeki bir resmi tamamen silince ne olur? Cevap: Diskte yer açılır ve resim yazıdan kalkar.
+7.	Soru: Bir eklentinin kodlarını düzenlemek için hangi menü kullanılır? Cevap: Eklenti Dosya Düzenleyicisi.
+8.	Soru: SEO nedir? Cevap: Arama Motoru Optimizasyonu.
+9.	Soru: Yorum yaparken isim ve e-posta zorunluluğu nereden ayarlanır? Cevap: Ayarlar > Tartışma.
+10.	Soru: Gravatar nedir? Cevap: WordPress yorumlarında görünen kullanıcı profil resmi.
+________________________________________
+2. Dönem 2. Sınav Hazırlık (Nisan - Haziran)
+Konu Özeti: Son dönem güvenlik ve ileri ayarlara odaklanır. Güvenlik İşlemleri kapsamında SQL Injection ve XSS gibi saldırılara karşı önlem alınır. DDoS saldırıları sunucuyu yormaya çalışır; bu yüzden XML-RPC kapatılır ve IP engelleme yapılır. CAPTCHA ise botları gerçek insanlardan ayırmak için kullanılır.
+Flash Kartlar (20 Adet):
+1.	Bilgi Güvenliği: Gizlilik, bütünlük ve erişilebilirlik ilkeleri.
+2.	SQL Injection: Veri tabanından izinsiz bilgi çalma yöntemi.
+3.	XSS (Cross-Site Scripting): Tarayıcıda izinsiz kod çalıştırma.
+4.	2FA: Çift faktörlü doğrulama güvenliği.
+5.	DDoS: Sunucuyu sahte isteklerle yanıt veremez hale getirme.
+6.	Botnet: Korsanların kontrol ettiği zombi bilgisayar ağı.
+7.	XML-RPC: Üçüncü taraf uygulamaların siteyle etkileşim protokolü.
+8.	.htaccess: Sunucu seviyesinde güvenlik ayarları yapan dosya.
+9.	IP Blocker: Belirli IP adreslerinin siteye erişimini engelleme.
+10.	Güvenlik Duvarı (Firewall): Yetkisiz erişimleri filtreleyen yazılım.
+11.	CDN: İçeriği dünya geneline dağıtarak hızı ve güvenliği artıran ağ.
+12.	Brute Force (Kaba Kuvvet): Sürekli şifre deneyerek sızma girişimi.
+13.	Raw Access Logs: Siteye gelen tüm ham erişim kayıtları.
+14.	Veri Tabanı Öneki: Tabloların başındaki wp_ gibi belirteç.
+15.	CAPTCHA: İnsan ve botu ayıran test.
+16.	reCAPTCHA: Google'ın sunduğu "Ben robot değilim" testi.
+17.	SSL Sertifikası: Veri trafiğini şifreleyen güvenlik belgesi.
+18.	Debug (Hata Ayıklama): Yazılımdaki hataları bulma modu.
+19.	wp-config.php: Sitenin ana yapılandırma ve güvenlik dosyası.
+20.	Site Key: reCAPTCHA kurulumu için gerekli anahtarlardan biri.
+Çalışma Soruları (10 Soru):
+1.	Soru: WordPress tabanlı sitelerde neden "admin" kullanıcı adı kullanılmamalıdır? Cevap: Kaba kuvvet saldırılarını zorlaştırmak için.
+2.	Soru: DDoS saldırısının temel amacı nedir? Cevap: Sunucuyu aşırı yükleyerek hizmet veremez hale getirmek.
+3.	Soru: XML-RPC neden devre dışı bırakılmalıdır? Cevap: DDoS saldırıları için açık bir kapı olabildiği için.
+4.	Soru: Veri tabanı güvenliği için en önemli işlem nedir? Cevap: Düzenli yedek almak.
+5.	Soru: reCAPTCHA'da V2 ve V3 arasındaki fark nedir? Cevap: V2 işlem bekler, V3 arka planda kullanıcıyı rahatsız etmeden çalışır.
+6.	Soru: Bir saldırı sonrası siteyi eski haline getirmenin en hızlı yolu nedir? Cevap: Yedeği geri yüklemek.
+7.	Soru: Hata ayıklama (Debug) modu neden kapalı tutulmalıdır? Cevap: Saldırganlara kod yapısı hakkında ipucu vermemek için.
+8.	Soru: SQL Injection saldırısı nereyi hedef alır? Cevap: Veri tabanını.
+9.	Soru: Siteye sadece belirli bir IP'den giriş izni vermek nerede yapılır? Cevap: .htaccess dosyası üzerinden.
+10.	Soru: Dosya düzenleme editörü güvenlik için neden kapatılmalıdır? Cevap: Panelden dosyaların içine zararlı kod enjekte edilmesini önlemek için.
+1. Dönem 1. Sınav Çalışma Kağıdı: Hosting ve Yönetim Paneli
+•	Domain ve Hosting Temelleri: Domain (alan adı), bir web sitesinin internetteki fiziksel adı ve adresidir; IP adreslerini akılda kalıcı isimlere çeviren teknoloji ise DNS'dir. Hosting, siteye ait dosyaların ve verilerin bir sunucu üzerinde depolanması amacıyla kullanılan alan kiralama işlemidir. Hosting ve domain hizmetleri olmadan bir web sitesinin internet ortamında yayınlanması mümkün değildir.
+•	WordPress Kurulumu ve Local Server: WordPress'i yerel bir bilgisayarda çalıştırmak için XAMPP gibi yerel sunucu programları (Apache ve MySQL) kurulmalıdır. Yazılım dosyaları htdocs klasörü altına çıkarıldıktan sonra bir veri tabanı oluşturulmalı ve kurulum adımları (site başlığı, kullanıcı adı, parola) tamamlanmalıdır.
+•	Yönetim Paneline Erişim: Yönetici paneline genellikle tarayıcı üzerinden siteismi.com/wp-admin veya yerel sunucuda localhost/wordpress/wp-admin adresinden erişilir. Panel şifreleri ile hosting kontrol paneli şifreleri farklıdır ve kurulum esnasında belirlenir.
+•	Kullanıcı Rolleri ve Yetkileri: WordPress standart olarak Yönetici (en yetkili), Editör (içerik kontrolü), Yazar (kendi yazılarını yönetme), İçerik Sağlayıcı (yayın yetkisi yok) ve Abone rollerini sunar. Güvenlik açısından "Yönetici" rolü sadece teknik becerisinden emin olunan kişilere verilmelidir.
+1. Dönem 2. Sınav Çalışma Kağıdı: İçerik ve Menü Yönetimi
+•	Yazılar ve Sayfalar Arasındaki Fark: Yazılar, haber ve blog gibi kategorilere bağlanabilen dinamik içeriklerdir; Sayfalar ise hakkımızda veya iletişim gibi sabit, kategorilere bağlanamayan içeriklerdir. Ziyaretçilerin ilgisini çekecek güncel içerikler için "Yazılar" alanı tercih edilmelidir.
+•	Gutenberg Editörü ve Blok Yapısı: Güncel WordPress sürümünde kullanılan Gutenberg, blok tabanlı bir editördür; başlık, paragraf ve görsel gibi her öge bir "blok" olarak eklenir. Blok Yerleştirici (+) simgesi kullanılarak siteye yeni içerik ögeleri kolayca dahil edilebilir.
+•	Kategori İşlemleri: WordPress düzenli bir yapı için her yazının bir kategoriye ait olmasını zorunlu kılar; kategori seçilmezse sistem yazıyı Varsayılan Kategori (Genel) altına atar. Kategoriler arasında hiyerarşi kurulabilir ve ana-alt kategori ilişkisi oluşturulabilir.
+•	Menü Tasarımı ve Konumlandırma: Menüler, site içindeki bağlantıların listelendiği navigasyon araçlarıdır ve konumu kullanıcı etkileşimini doğrudan etkiler. Menülere sayfalar, yazılar, kategoriler veya Özel Bağlantılar (etiketler) eklenebilir.
+2. Dönem 1. Sınav Çalışma Kağıdı: Temalar ve Eklentiler
+•	Tema Yükleme ve Değiştirme: Temalar web sitesinin dış görünümünü belirler; tema değiştirilmeden önce sitenin mutlaka yedeği alınmalıdır. İhtiyaca uygun temalar "Görünüm" menüsü üzerinden aranabilir ve "Etkinleştir" butonu ile aktif hale getirilebilir.
+•	Tema Kod Arayüzünde Değişiklik: Temaların görselliğini değiştirmek için style.css, fonksiyon eklemek için functions.php ve üst/alt bölümleri düzenlemek için header.php / footer.php dosyaları kullanılır. Kod düzenleme işlemleri için temel kod okuryazarlığı gereklidir; aksi takdirde site kilitlenebilir.
+•	Eklenti (Plugin) Kurulumu ve Yönetimi: Eklentiler, sisteme yeni işlevler katan kod paketleridir; güvenlik, SEO, hız optimizasyonu ve iletişim formları gibi amaçlarla kullanılırlar. Yeni bir eklenti yüklenirken mutlaka WordPress versiyonu ile uyumluluğu kontrol edilmelidir.
+•	Eklenti Kodlama Temelleri: WordPress eklentileri PHP dili ile yazılır ve wp-content/plugins klasörü içinde yer alır. Yeni bir eklenti oluşturmak için klasör adı ile ana dosya adının aynı olması ve dosya içinde eklenti bilgilerini içeren başlık kodlarının bulunması zorunludur.
+2. Dönem 2. Sınav Çalışma Kağıdı: Yorum Yönetimi ve Güvenlik
+•	Yorum ve Tartışma Ayarları: Ziyaretçi geri bildirimlerini yönetmek için Tartışma Ayarları kullanılır; burada yorumların el ile onaylanması, isim/e-posta zorunluluğu gibi kurallar belirlenir. İstenmeyen (spam) yorumları otomatik filtrelemek için varsayılan olarak Akismet eklentisi kurulu gelir.
+•	Ortam Kütüphanesi İşlemleri: Siteye yüklenen tüm görsel ve medya dosyaları Ortam Kütüphanesi'nde saklanır; resimler sunucuda küçük, orta ve büyük olmak üzere üç farklı boyutta tutulur. Disk alanını verimli kullanmak için kullanılmayan dosyalar kalıcı olarak silinmelidir.
+•	Siber Saldırılar ve Önlemler: En yaygın saldırılar arasında veri tabanından bilgi çalmayı hedefleyen SQL Injection, sahte trafikle sunucuyu çökerten DDoS ve tarayıcıda kod çalıştıran XSS yer alır. Güvenlik için "admin" kullanıcı adı kullanılmamalı, sistem güncel tutulmalı ve düzenli yedek alınmalıdır.
+•	Gelişmiş Güvenlik ve CAPTCHA: DDoS riskini azaltmak için XML-RPC ve REST API pasif hale getirilebilir; ayrıca botları ayırmak için CAPTCHA (veya reCAPTCHA) sistemi kurulmalıdır. Kritik dosyalara (wp-config.php) erişimi sınırlamak için .htaccess dosyası üzerinden IP engelleme yapılabilir.
+Tüm bu konuları kapsayan, öğrenme birimlerine göre ayrılmış kapsamlı bir quiz (test) hazırlamamı ister misin?
+
