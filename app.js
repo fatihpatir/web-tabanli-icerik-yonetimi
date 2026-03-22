@@ -82,6 +82,25 @@ const app = {
     area.innerHTML = html; window.print();
   },
 
+  printOpenEnded() {
+    this.playSound('click');
+    const a = document.getElementById('print-area');
+    if(!this.activeExam || !a) return;
+    let html = `<div style="text-align:center; margin-bottom:2rem"><h1 style="font-family:sans-serif">AÇIK UÇLU SINAV SORULARI</h1><h3>${this.activeExam.title}</h3><p>Fatih PATIR - Bilişim Teknolojileri Öğretmeni</p></div>`;
+    if(this.activeExam.openEndedQuestions) {
+      this.activeExam.openEndedQuestions.forEach((q, i) => {
+        html += `
+          <div style="margin-bottom:25px; padding:15px; border-bottom:1px solid #ccc; font-family:sans-serif;">
+            <strong style="font-size:12pt;">Soru ${i+1}: ${q.q}</strong><br><br>
+            <div style="font-size:11pt; color:#111;"><strong>Cevap:</strong> ${q.a}</div>
+          </div>
+        `;
+      });
+    }
+    a.innerHTML = html;
+    window.print();
+  },
+
   // --- Achievements ---
   saveProgress(id, type) {
     if (!this.progress[id]) this.progress[id] = {};
@@ -210,6 +229,26 @@ const app = {
         </div>
       </div>
     `;
+    this.showView('view-content');
+  },
+
+  startOpenEnded() {
+    const c = document.getElementById('content-container');
+    const qs = this.activeExam.openEndedQuestions || [];
+    
+    if(qs.length === 0) {
+      c.innerHTML = `<div class="game-container"><h3 style="text-align:center;">Bu ünite için açık uçlu soru bulunamadı.</h3></div>`;
+      return;
+    }
+
+    c.innerHTML = `
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2.5rem; flex-wrap:wrap;">
+          <h2 style="color:var(--accent); margin:0;">${this.activeExam.title} / Açık Uçlu Sınav</h2>
+          <button class="btn btn-secondary" style="padding:0.6rem 1rem; font-size:0.8rem;" onclick="app.printOpenEnded()">🖨️ PDF İNDİR</button>
+      </div>
+      ${qs.map((q, i) => `<div class="q-card" style="margin-bottom:2rem;"><div class="q-num">SORU ${i+1}</div><p class="q-text" style="font-weight:bold; font-size:1.1rem; margin-bottom:1rem; border-bottom:1px solid var(--glass-border); padding-bottom:10px;">${q.q}</p><p class="a-text" style="color:var(--accent); line-height:1.6; font-size:1.05rem;"><strong style="color:var(--text);">Cevap:</strong> ${q.a}</p></div>`).join('')}
+    `;
+    this.saveProgress(this.activeExam.id, 'openEnded');
     this.showView('view-content');
   },
 
